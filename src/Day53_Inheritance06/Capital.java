@@ -1,6 +1,7 @@
 package Day53_Inheritance06;
-
+import java.util.Date;
 public class Capital extends Cities {
+	
 	
 
 		private long population;

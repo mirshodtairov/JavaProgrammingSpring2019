@@ -1,26 +1,41 @@
 package ArrayAssignments;
 
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class ArrayHas55 {
 
 	public static void main(String[] args) {
-
-		Scanner input = new Scanner(System.in);
-		int count = 0;
-
-		int[] nums = { input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() };
-		for (int i = 0; i < nums.length - 1; i++) {
-			if (nums[i] == 5 && nums[i + 1] == 5) {
-				count++;
-				if (count >= 1)
-
-					System.out.print(true);
-				return;
-
+		
+		for (int i = 11; i <=121; i++) {
+			if(i%2!=0) {
+				System.out.print(i+" ");
 			}
-
+			
 		}
-		System.out.println(false);
+
 	}
+
+	public static boolean appearsTwice(String target, String sentence) {
+		  
+		  int count= 0;
+		  String [] aaa = sentence.split(" ");
+		  
+		  for (int i = 0; i < aaa.length; i++) {
+			  if(aaa[i].equals(target)) {
+				  count++;
+				  
+			  }
+			
+		}if(count>=1) {
+		  
+
+			return true;
+			}else {
+				return false;
+			}
+		
+		
+		}
+	
+
 }
